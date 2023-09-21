@@ -1,5 +1,5 @@
 def finish(input_str):
-    if input_str.lower() in [f"вихід", "exit", "quit", "e", "q"]:
+    if input_str.lower() in ["вихід", "exit", "quit", "e", "q"]:
         return "exit"
     elif input_str.lstrip('-').isdigit():
         number = int(input_str)
@@ -21,7 +21,8 @@ def finish(input_str):
 
 
 while True:
-    user_input = input("Введіть будь яке число, або 'вихід', 'exit', 'quit', 'e', 'q'  для виходу: ")
+    user_input = input("Введіть будь яке число, або 'вихід', "
+                       "'exit', 'quit', 'e', 'q'  для виходу: ")
     result = finish(user_input)
     if result == "exit":
         break
