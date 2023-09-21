@@ -17,7 +17,7 @@ def finish(input_str):
             else:
                 return f"Ви ввели від'ємне дробове число: {number}"
         except ValueError:
-            return f"Ви ввели неправильное число: {input_str}"
+            return f"Ви ввели неправильне число: {input_str}"
 
 
 while True:
