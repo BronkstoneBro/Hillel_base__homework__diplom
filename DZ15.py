@@ -15,8 +15,7 @@ def finish(input_str):
             return "Ви ввели нуль"
         elif number > 0:
             return f"Ви ввели позитивне ціле число: {number}"
-        else:
-            return f"Ви ввели від'ємне ціле число: {number}"
+
     else:
         try:
             number = float(input_str.replace(",", "."))
