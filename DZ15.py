@@ -5,7 +5,7 @@ def finish(input_str):
     if input_str.startswith('--'):
         return f"Ви ввели неправильне число: {input_str}"
 
-    if input_str.startswith('-'):
+    if input_str.startswith('-') and input_str[1:].isdigit():
         number = int(input_str)
         return f"Ви ввели від'ємне ціле число: {number}"
 
@@ -20,12 +20,12 @@ def finish(input_str):
     else:
         try:
             number = float(input_str.replace(",", "."))
-            if number == 0:
-                return "Ви ввели нуль"
+            if number < 0:
+                return f"Ви ввели від'ємне дробове число:  {number}"
             elif number > 0:
                 return f"Ви ввели позитивне дробове число: {number}"
             else:
-                return f"Ви ввели від'ємне дробове число: {number}"
+                return "Ви ввели нуль"
         except ValueError:
             return f"Ви ввели неправильне число: {input_str}"
 
