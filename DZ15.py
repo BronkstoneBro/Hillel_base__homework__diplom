@@ -1,7 +1,7 @@
 def finish(input_str):
     if input_str.lower() in ["вихід", "exit", "quit", "e", "q"]:
         return "exit"
-
+ 
     if input_str.startswith('--'):
         return f"Ви ввели неправильне число: {input_str}"
 

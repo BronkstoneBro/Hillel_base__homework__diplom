@@ -6,7 +6,7 @@ with open("dictionary.json", "r") as json_file:
     data = json.load(json_file)
 
 with open('CSV_read.csv', 'w', newline="") as csv_file:
-    option_open = ["ID", "Имя", "Возраст", "Телефон"]
+    option_open = ["ID", "Ім'я", "Вік", "Телефон"]
     writer = csv.DictWriter(csv_file, fieldnames=option_open)
 
     writer.writeheader()
@@ -23,7 +23,7 @@ with open('CSV_read.csv', 'w', newline="") as csv_file:
                                     for _ in range(7))
             phone = f'{number}{phone_numbers}'
 
-        writer.writerow({"ID": id, "Имя": name,
-                         "Возраст": age, "Телефон": phone})
+        writer.writerow({"ID": id, "Ім'я": name,
+                         "Вік": age, "Телефон": phone})
 
 print("save in CSV-file 'CSV_read.csv'")
