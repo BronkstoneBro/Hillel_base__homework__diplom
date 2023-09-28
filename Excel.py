@@ -27,4 +27,4 @@ new_workbook.save('Excel_read90.xlsx')
 
 print("Данные из CSV-файла сохранены в Excel_read.xlsx без столбца Age.")
 print('Таблица Excel успешно перевернута на '
-      '90 градусов и сохранена в Excel_read90.xlsx.')
+      '90 градусов и сохранена в Excel_read90.xlsx')
