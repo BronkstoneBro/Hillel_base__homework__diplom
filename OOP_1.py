@@ -7,10 +7,10 @@ class Auto:
         self.weight = weight
 
     def move(self):
-        print(f"{self.brand} Move")
+        print("Move")
 
     def stop(self):
-        print(f"{self.brand} Stop")
+        print("Stop")
 
     def birthday(self):
         self.age += 1
