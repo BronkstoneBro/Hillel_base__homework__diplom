@@ -1,5 +1,6 @@
 import time
 
+
 class Auto:
     def __init__(self, brand, age, mark, color="", weight=0):
         self.brand = brand
@@ -16,6 +17,7 @@ class Auto:
 
     def birthday(self):
         self.age += 1
+
 
 class Truck(Auto):
     def __init__(self, brand, age, mark, max_load, color="", weight=0):
@@ -38,11 +40,14 @@ class Car(Auto):
         self.max_speed = max_speed
 
     def move(self):
+
         super().move()
         print(f"Max speed is {self.max_speed}")
 
+
 truck_1 = Truck("Mercedes", 2018, "Actros", 10000, "White", 8000)
 truck_2 = Truck("Volvo", 2020, "FM", 35000, "Black", 15000)
+
 car_1 = Car("Lamborghini", 2022, "Aventador", 350, "White", 1500)
 сar_2 = Car("Rolls Royce", 2020, "Phantom", 250, "Black", 2500)
 
