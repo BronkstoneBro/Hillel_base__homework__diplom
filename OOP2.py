@@ -60,7 +60,7 @@ print(f'Name of the first Truck max load: {truck_1.max_load}')
 truck_1.move()
 truck_1.stop()
 truck_1.birthday()
-print(f'Age of first Truck after birthday: {truck_1.age}')
+print(f'Age of first Truck: {truck_1.age}')
 truck_1.load()
 
 print(f'Name of the second Truck brand: {truck_2.brand}')
