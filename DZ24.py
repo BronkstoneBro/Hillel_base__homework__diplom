@@ -2,9 +2,6 @@ class String(str):
     def __add__(self, other):
         return String(super().__add__(str(other)))
 
-    def __radd__(self, other):
-        return String(super().__radd__(str(other)))
-
     def __sub__(self, other):
         if other is None:
             new_str = self.replace(str(other), '', 1)
@@ -12,17 +9,6 @@ class String(str):
             new_str = self.replace(other, '', 1)
         elif isinstance(other, (int, float)):
             new_str = self.replace(str(other), '', 1)
-        else:
-            new_str = self
-        return String(new_str)
-
-    def __rsub__(self, other):
-        if other is None:
-            new_str = self.replace(str(other), '', 1)
-        elif isinstance(other, str):
-            new_str = other.replace(self, '', 1)
-        elif isinstance(other, (int, float)):
-            new_str = str(other).replace(self, '', 1)
         else:
             new_str = self
         return String(new_str)
