@@ -3,7 +3,7 @@ class Car:
     COLORS = []
     NUMBER_OF_CARS = 0
 
-    def __init__(self, model, year,fuel_type, color):
+    def __init__(self, model, year, fuel_type, color):
         self.model = model
         self.year = year
         self.color = color
@@ -34,16 +34,14 @@ class Car:
 
 
 car_1 = Car('Zaz', 1979, 'дизель', 'black')
-
 car_2 = Car('BMW', 2000, 'бензин', 'red')
-
 car_3 = Car('VOLVO', 2012, 'електрикаcccc', 'black')
-
 car_4 = Car('Mersedes', 2012, 'гібрид', 'black')
 
 print('COLORS:', Car.get_used_colors())
 print('NUMBER_OF_CARS:', Car.get_number_of_cars())
 
 for item in (car_1, car_2, car_3, car_4):
-    print('item:', item.model, '-', item.year, '-', item.fuel_type, '-', item.color)
+    print('item:', item.model, '-', item.year, '-',
+          item.fuel_type, '-', item.color)
     print('numbers:', item.numbers)
