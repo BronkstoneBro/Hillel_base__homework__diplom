@@ -3,15 +3,7 @@ class String(str):
         return String(super().__add__(str(other)))
 
     def __sub__(self, other):
-        if other is None:
-            new_str = self.replace(str(other), '', 1)
-        elif isinstance(other, str):
-            new_str = self.replace(other, '', 1)
-        elif isinstance(other, (int, float)):
-            new_str = self.replace(str(other), '', 1)
-        else:
-            new_str = self
-        return String(new_str)
+        return String(self.replace(str(other), '', 1))
 
 
 print(String('New') + String(890))    # 'New890'
