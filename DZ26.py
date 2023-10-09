@@ -1,6 +1,7 @@
 class NegativeExponentErrors(Exception):
     pass
 
+
 class Calculator:
     def add(self, x, y):
         try:
@@ -33,7 +34,8 @@ class Calculator:
     def power(self, x, y):
         try:
             if y < 0:
-                raise NegativeExponentErrors ("Піднесення до негативного ступеня неможливе")
+                raise NegativeExponentErrors("Піднесення до "
+                                             "негативного ступеня неможливе")
             return x ** y
         except NegativeExponentErrors as e:
             return f"Помилка: {e}"
@@ -49,6 +51,7 @@ class Calculator:
             return f"Помилка: {e}"
         except Exception as e:
             return f"Помилка: {e}"
+
 
 calc = Calculator()
 print(calc.add(5, 5))
