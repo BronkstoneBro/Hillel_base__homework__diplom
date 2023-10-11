@@ -4,3 +4,5 @@ latin1 = bytes.encode("Latin1")
 print(latin1)
 latin_bytes = latin1.decode("Latin1")
 print(latin_bytes)
+
+
